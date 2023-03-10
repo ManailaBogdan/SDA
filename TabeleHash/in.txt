@@ -1,0 +1,2 @@
+insert ana are
+print

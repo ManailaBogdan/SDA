@@ -1,0 +1,17 @@
+Manaila Bogdan 313CB
+                    Explicare tema
+
+    Pentru implementarea si rezolvarea temei am creat o tabela Hash. Dupa ce am deschis fisierul dat, l-am 
+parcurs linie cu linie. In variabila 'functie' am salvat primul cuvant din linie. Daca acesta era 'insert',
+adaugam in tabela ficare cuvant care urma dupa el, pana la teriminarea liniei. Pentru asta am creat functia
+'insert', precum si functiile apaleta in ea. Verificam daca in tabela mai exista un cuvant care sa inceapa 
+cu aceeasi litera si care sa aibe acelasi nr de litere. Daca nu exista, cream o sublista noua cara sa
+contina acel cuvant. Daca da, verifiam daca acel cuvant exista deja in tabela. Daca raspunsul era afirmativ, 
+cresteam numarul de aparitii ale cuvanului, iar in caz contrar il adaugam in sublista specifica. La finalul
+functiei 'insert', sortam listele si sublistele din tabela dupa criteriile cerintei. Daca functia era 'print',
+verificam daca exista alti parametri dupa ea. Daca nu era nimic, afisam tabela in intregime. Daca erau o 
+litera si un numar,  afisam cuvintele care incep cu litera respectiva si care aveau acel numar de litere.
+Daca era doar un numar, afisam cuvintele cu numar de aparitii mai mic sau egal cu acel numar. La final,
+inchideam fisierul.
+
+Link enunt: https://archive.curs.upb.ro/2021/pluginfile.php/525249/mod_assign/intro/tema_1_SD_CB-2022.pdf?time=1649276081035
