@@ -1,0 +1,40 @@
+Manaila Bogdan 313CB
+
+-=Tema 3=-
+
+Functii folosite:
+
+    1. touch: Pentru aceasta functie am cautat mai intai arborele de subdirectoare daca este folosit deja
+numele dat. Daca arborele de fisiere aferent directorului curent nu exista, fisierul creat este radacina.
+Daca arborele deja exista, ne plimbam prin el cautand atat daca numele este deja in uz, cat si pozitia
+pe care o sa punem noul fisier (daca putem).
+
+    2. mkdir: Pentru aceasta functie, daca arborele de subdirectoare nu exita, directorul creat este radacina.
+Daca exista deja, cautam in arborele de fisiere deca numele este folosit. Dupa cautam in arborele de 
+subdirectoare atat d aca numele este in uz, cat si pozitia pe care o sa il punem (daca putem).
+
+    3. ls: Functia ls afisaza lexicografic subdirectoarele dintr-un director, dupa care, tot lexicografic, si
+fisierele. Am creat cate o functie pentru fisiere si directoare ('print_lex_fis', 'print_lex_dir'). Functiile
+se foloses recursivitatea.
+
+    4. rm: Functia cauta mai intai fisierul cerut. Daca nu are copii si este chiar radacina, aceasta se sterge.
+Daca nu are copii si nu este radacina se sterge (aici pentru aceste doua cazuri, ma folosesc de o variabila
+ce retine pozitia parintelui fisierului cautat). Daca fisierul are doar un copil se sterge fisierul si 
+si copilul vine pe pozitia parintelui. Analog pentru cazul cu doar un copil stang. Daca are doi copii, 
+copilul din stanga al copilului din dreapta al fisierului cautat este pus pe cea mai din dreapta pozitie a 
+arborelui cu radacina fiul din stanga al fisierului, iar fiul din dreapta vine pe locul parintelui.
+
+    5. rmdir: Functia functioneaza la fel ca rm, doar ca pentru arborele de subdirectoare.
+
+    6. cd: Functia cd trece dintr-un director intr-un subdirector. Fiecare functie primeste ca parametru
+un pointer la directorul curent. Functia cd cauta in arborele de subdirectoare numele cerut. Daca este 
+gasit pointerul la directorul curent este schimbat la cel gasit (care este returnat de funtie).
+
+    7. pwd: Functia afisaza calea de la directorul root pana la directorul curent. Ea se autoapeleaza recursiv.
+    8. find: Functiile find(-f si -d) functioneaza similar. Se pleaca de la directorul root si se trece
+cu un while print directoare, si cu recursivitate pentru subdirectoare, in cautarea numelui cerut. Daca 
+este gasit se returneaza directorul in care se afla si se apeleaza pwd pe el.
+    9. quit: Functia dezaloca toti arborii si opreste programul.
+
+
+    Link enunt: https://archive.curs.upb.ro/2021/pluginfile.php/552937/mod_assign/intro/Tema%203.pdf
